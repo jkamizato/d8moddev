@@ -1,12 +1,13 @@
 <?php
 
-
 namespace Drupal\hello_world\Form;
-
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Configuration form definition for the salutation message.
+ */
 class SalutationConfigurationForm extends ConfigFormBase {
 
   /**
@@ -35,7 +36,7 @@ class SalutationConfigurationForm extends ConfigFormBase {
   }
 
   /**
-   * @inheritDoc
+   * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('hello_world.custom_salutation');
@@ -50,12 +51,12 @@ use.'),
   }
 
   /**
-   * @inheritDoc
+   * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->config('hello_world.custom_salutation')
-    ->set('salutation', $form_state->getValue('salutation'))
-    ->save();
+      ->set('salutation', $form_state->getValue('salutation'))
+      ->save();
     parent::submitForm($form, $form_state);
   }
 
