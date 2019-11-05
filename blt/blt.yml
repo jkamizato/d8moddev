@@ -13,7 +13,7 @@ project:
   machine_name: d8moddev
   # Used for enforcing correct git commit msg syntax.
   prefix: DMD
-  human_name: 'BLTed 10'
+  human_name: 'Drupal 8 Module Development'
   profile:
     name: lightning
   # This will be used as the local uri for all developers.
