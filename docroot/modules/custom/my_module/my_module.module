@@ -1,0 +1,16 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function my_module_form_salutation_configuration_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['salutation']['#title'] = t('Title changed by My Module');
+  $form['color'] = [
+    '#type' => 'color',
+    '#title' => t('Color'),
+    '#default_value' => '#ffffff',
+  ];
+  return $form;
+}
