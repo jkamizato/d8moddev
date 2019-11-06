@@ -1,0 +1,14 @@
+uuid: 45f3a732-8361-433e-9e9f-c37cdef9f28b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: non_grata
+label: 'Non Grata'
+weight: 7
+is_admin: null
+permissions: {  }

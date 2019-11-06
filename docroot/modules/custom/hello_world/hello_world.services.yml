@@ -1,0 +1,9 @@
+services:
+  hello_world.salutation:
+    class: \Drupal\hello_world\HelloWorldSalutation
+
+  hello_world.redirect_subscriber:
+    class: \Drupal\hello_world\EventSubscriber\HelloWorldEventSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+      - { name: event_subscriber }

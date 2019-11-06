@@ -1,0 +1,14 @@
+uuid: 99b01042-7762-4b7e-a7fb-cb5e9af6c529
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.non_grata
+  module:
+    - user
+id: user_remove_role_action.non_grata
+label: 'Remove the Non Grata role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: non_grata
