@@ -1,16 +1,18 @@
 <?php
 
-
 namespace Drupal\hello_world;
-
 
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 
+/**
+ * HelloWorldSalutation class.
+ */
 class HelloWorldSalutation {
 
-use StringTranslationTrait;
+  use StringTranslationTrait;
+
   /**
-   * Returns the salutation
+   * Returns the salutation.
    */
   public function getSalutation() {
     $time = new \DateTime();
@@ -24,4 +26,5 @@ use StringTranslationTrait;
       return $this->t('Good evening world');
     }
   }
+
 }
