@@ -28,7 +28,16 @@ class HelloWorldSalutationBlock extends BlockBase implements ContainerFactoryPlu
   protected $salutation;
 
   /**
-   * {@inheritDoc}
+   * HelloWorldSalutationBlock constructor.
+   *
+   * @param array $configuration
+   *   Default configuration.
+   * @param mixed $plugin_id
+   *   Plugin id.
+   * @param mixed $plugin_definition
+   *   The plug definition.
+   * @param \Drupal\hello_world\HelloWorldSalutation $salutation
+   *   HelloWorldService.
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, HelloWorldSalutationService $salutation) {
     $this->salutation = $salutation;
@@ -67,7 +76,10 @@ class HelloWorldSalutationBlock extends BlockBase implements ContainerFactoryPlu
   }
 
   /**
-   * {@inheritDoc}
+   * Default configuration.
+   *
+   * @return array
+   *   List of configuration.
    */
   public function defaultConfiguration() {
     return [
@@ -76,7 +88,7 @@ class HelloWorldSalutationBlock extends BlockBase implements ContainerFactoryPlu
   }
 
   /**
-   * {@inheritDoc}
+   * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
     $config = $this->defaultConfiguration();
@@ -90,7 +102,7 @@ class HelloWorldSalutationBlock extends BlockBase implements ContainerFactoryPlu
   }
 
   /**
-   * {@inheritDoc}
+   * {@inheritdoc}
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
     parent::blockSubmit($form, $form_state);

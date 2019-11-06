@@ -29,7 +29,13 @@ class HelloWorldController extends ControllerBase {
   }
 
   /**
-   * {@inheritDoc}
+   * Custom create with container.
+   *
+   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
+   *   Default ContainerInterface.
+   *
+   * @return \Drupal\Core\Controller\ControllerBase|static
+   *   New static container with list of services.
    */
   public static function create(ContainerInterface $container) {
     return new static(
