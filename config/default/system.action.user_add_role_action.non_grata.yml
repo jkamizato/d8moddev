@@ -1,0 +1,14 @@
+uuid: 31dcfede-8c7f-49f8-ba55-8fb63f0d6949
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.non_grata
+  module:
+    - user
+id: user_add_role_action.non_grata
+label: 'Add the Non Grata role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: non_grata
