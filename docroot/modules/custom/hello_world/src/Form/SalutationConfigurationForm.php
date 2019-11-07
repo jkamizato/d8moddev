@@ -15,6 +15,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class SalutationConfigurationForm extends ConfigFormBase implements ContainerInjectionInterface {
 
   /**
+   * LoggerChannel Service.
+   *
    * @var Drupal\Core\Logger\LoggerChannelInterface
    */
   protected $logger;
