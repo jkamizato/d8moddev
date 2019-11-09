@@ -14,5 +14,6 @@ services:
 
   hello_world.logger.hello_world:
     class: \Drupal\hello_world\Logger\MailLogger
+    arguments: ['@logger.log_message_parser', '@config.factory']
     tags:
       - { name: logger }

@@ -22,11 +22,19 @@ class SalutationConfigurationForm extends ConfigFormBase implements ContainerInj
   protected $logger;
 
   /**
+   * Config Factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected $configFactory;
+
+  /**
    * {@inheritdoc}
    */
   public function __construct(ConfigFactoryInterface $config_factory, LoggerChannelInterface $logger) {
     parent::__construct($config_factory);
     $this->logger = $logger;
+    $this->configFactory = $config_factory;
   }
 
   /**
