@@ -70,10 +70,8 @@ class HelloWorldSalutationBlock extends BlockBase implements ContainerFactoryPlu
    * @see \Drupal\block\BlockViewBuilder
    */
   public function build() {
-    $user_message = 'The user that was logged in: [current-user:name].';
-    $token = \Drupal::token()->replace($user_message, ['current-user' => \Drupal::currentUser()]);
     return [
-      '#markup' => $this->salutation->getSalutation() . ' - ' . $token,
+      '#markup' => $this->salutation->getSalutation(),
     ];
   }
 

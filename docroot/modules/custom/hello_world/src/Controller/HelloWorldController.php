@@ -58,11 +58,10 @@ class HelloWorldController extends ControllerBase {
   /**
    * Sum values.
    *
-   * @param $a
+   * @param int $a
    *   First value.
-   *
-   * @param $b
-   *   Second value
+   * @param int $b
+   *   Second value.
    *
    * @return mixed
    *   Return sum of value.

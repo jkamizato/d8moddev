@@ -13,7 +13,7 @@ class MailLogger implements LoggerInterface {
   use RfcLoggerTrait;
 
   /**
-   * {@inheritDoc}.
+   * {@inheritdoc}
    */
   public function log($level, $message, array $context = []) {
 

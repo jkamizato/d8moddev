@@ -45,7 +45,7 @@ class HelloWorldControllerTest extends UnitTestCase {
   }
 
   /**
-   * test SimpleSum method.
+   * Test SimpleSum method.
    *
    * @dataProvider providerTestSimpleSum
    */
