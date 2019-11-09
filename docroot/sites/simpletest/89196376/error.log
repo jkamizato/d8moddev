@@ -1,0 +1,6 @@
+[08-Nov-2019 14:15:34 Australia/Sydney] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ConnectException: cURL error 7: Failed to connect to 127.0.0.1 port 8510: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) in /var/www/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:200
+Stack trace:
+#0 /var/www/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(155): GuzzleHttp\Handler\CurlFactory::createRejection(Object(GuzzleHttp\Handler\EasyHandle), Array)
+#1 /var/www/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(105): GuzzleHttp\Handler\CurlFactory::finishError(Object(GuzzleHttp\Handler\CurlHandler), Object(GuzzleHttp\Handler\EasyHandle), Object(GuzzleHttp\Handler\CurlFactory))
+#2 /var/www/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php(43): GuzzleHttp\Handler\CurlFactory::finish(Object(GuzzleHttp\Handler\CurlHandler), Object(GuzzleHttp\Handler\EasyHandle), Object(GuzzleHttp\Handler\CurlFactory))
+#3 /var/www/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(28): GuzzleHttp\Handler\CurlHandler->__invoke(Object(GuzzleHttp\Psr7\Request in /var/www/vendor/jcalderonzumba/gastonjs/src/Browser/BrowserBase.php on line 93

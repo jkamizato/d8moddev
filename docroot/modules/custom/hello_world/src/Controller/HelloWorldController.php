@@ -55,4 +55,19 @@ class HelloWorldController extends ControllerBase {
     ];
   }
 
+  /**
+   * Sum values.
+   *
+   * @param int $a
+   *   First value.
+   * @param int $b
+   *   Second value.
+   *
+   * @return mixed
+   *   Return sum of value.
+   */
+  public function sum($a, $b) {
+    return $a + $b;
+  }
+
 }
